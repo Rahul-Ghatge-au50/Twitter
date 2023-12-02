@@ -1,0 +1,24 @@
+.feed-cont{
+    border-right: 1px solid var(--twitter-background);
+    max-height: fit-content;
+    /* height: 100vh; */
+    /* border: 2px solid red; */
+    margin-top: 0px;
+    width: 39.3vw;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    flex: 6;
+}
+
+.feed-header{
+    padding: 0px 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.feed-post{
+    margin: 0px 10px;
+    /* border: 2px solid red; */
+
+}

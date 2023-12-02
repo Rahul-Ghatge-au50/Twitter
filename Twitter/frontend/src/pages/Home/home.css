@@ -1,0 +1,10 @@
+.home-cont{
+    display: flex;
+    /* width: 83vw; */
+    width: 88%;
+    height: fit-content;
+    /* justify-content: space-between; */
+    margin: auto;
+    margin-top: 0px;
+    /* border: 2px solid red; */
+}

@@ -1,0 +1,56 @@
+.widgets {
+    /* background-color: white; */
+    z-index: 8;
+    /* border: 2px solid red; */
+    flex: 0.3;
+    min-width: fit-content;
+    overflow-y: scroll;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width:688px) {
+    .widgets{
+        display: none;
+    }
+}
+
+.widgets::-webkit-scrollbar{
+    display: none;
+}
+
+.widgets-input{
+    display: flex;
+    align-items: center;
+    background-color: var(--twitter-background);
+    padding: 10px 20px;
+    border-radius: 50px;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+.widgets-input>input{
+   background-color:var(--twitter-background); ;
+    border: none;
+    outline: none;
+}
+
+.widgets-searchIcon{
+    color: grey;
+}
+
+
+.widgets-cont {
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 25px;
+    background-color: #f5f8fa;
+    border-radius: 20px;
+}
+
+.widgets-cont>h2{
+    font-size: 30px;
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 800;
+}
+  
