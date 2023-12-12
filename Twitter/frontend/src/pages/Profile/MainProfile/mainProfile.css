@@ -11,6 +11,7 @@
 .coverImage {
     width: 550px;
     height: 200px;
+    object-fit: cover;
 }
 
 .coverImgCont{
@@ -26,16 +27,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.63);
+    background-color: rgba(99, 99, 99, 0.63);
 }
 
 .hoverCoverImg:hover{
     opacity: 100%;
 }
 
+.imgIcon-TweetBtn{
+    width: 100%;
+    padding-left: 35px;
+}
+
 .photoIcon{
     color: white;
-    font-size: 35px !important;
+    font-size: 30px !important;
     opacity: 40%;
     /* margin-right: 20px; */
     cursor: pointer;
@@ -51,6 +57,7 @@
     justify-content: space-between;
     align-items: flex-start;
     /* border:1px solid red; */
+    font-family: 'Sarabun', sans-serif;
 }
 
 .heading-4{
@@ -69,13 +76,14 @@
 }
 
 .usernameSec{
+    margin-top: 0px;
     margin-left: 20px;
     color:darkgray;
 }
 
 .mainProfile{
     margin-top: 0px;
-    background-color: rgb(207,206,206);
+    /* background-color: rgb(207,206,206); */
     border: 1px solid white;
 }
 
@@ -104,11 +112,13 @@
 .hoverAvatarImg{
     position: absolute;
     top:0%;
-    background-color:rgba(0, 0, 0, 0.63);
+    background-color: rgba(99, 99, 99, 0.63);
     width: 100%;
     height: 100%;
     border-radius: 100%;
     opacity: 0;
+    display: flex;
+    align-items: center;
 } 
 
 .hoverAvatarImg:hover{

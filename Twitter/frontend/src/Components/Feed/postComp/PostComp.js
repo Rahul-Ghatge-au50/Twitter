@@ -5,19 +5,20 @@ import RepeatIcon from "@mui/icons-material/Repeat";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import PublishIcon from "@mui/icons-material/Publish";
 import './postcomp.css';
+import UserLoggedIn from "../../../Hooks/userLoggedIn";
 
 
 
 function PostComp({ item }) {
     //console.log(item);
-
+    const [loginInUser] = UserLoggedIn();
     const { name, profilePhoto, username, email, photo, post } = item;
 
     return (
         <>
             <div className="post-cont">
                 <div className="post-avatar">
-                    <Avatar />
+                    <Avatar src={profilePhoto}/>
                 </div>
                 <div className="post-body">
                     <div className="post-header">

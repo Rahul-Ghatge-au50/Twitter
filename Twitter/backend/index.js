@@ -35,6 +35,14 @@ async function run() {
             res.send(post);
         })
 
+
+        //to get specific user post 
+        app.get('/userPost', async (req, res) => {
+            const email = req.query.email;
+            const post = (await postCollection.find({email:email}).toArray()).reverse();
+            res.send(post);
+        })
+
         //to create post
         app.post('/post', async (req,res) => {
             const post = req.body;
@@ -60,6 +68,16 @@ async function run() {
             //console.log(email);
             //console.log(user);
             res.send(user);
+        })
+
+
+        app.patch('/userUpdates/:email',async (req,res) => {
+            const filter = req.params;
+            const profile = req.body;
+            const updateDoc = {$set:profile};
+            const options = {upsert:true};
+            const result = await userCollection.updateOne(filter,updateDoc,options);
+            res.send(result);
         })
     } catch (error) {
         console.log(error);

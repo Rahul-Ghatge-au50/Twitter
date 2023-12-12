@@ -79,7 +79,7 @@ function Sidebar({ handleLogout, user }) {
 
                 <div className="profile-info">
                     {
-                        !user ? ('') : (<Avatar src='' />)
+                        !user ? ('') : (<Avatar src={loginInUser?.profileImage} />)
                     }
 
                     <div className="user-info">
@@ -99,7 +99,7 @@ function Sidebar({ handleLogout, user }) {
 
                     <Menu id='basic-menu' anchorEl={anchorEl} open={openMenu} onClick={handleClose} >
                         <MenuItem className='profile-info1'>
-                            <Avatar src='' />
+                            <Avatar src={loginInUser?.profileImage} />
                             <div className="subuserInfo">
                                 <div className="user-info">
                                     <h4>{loginInUser.name}</h4>
